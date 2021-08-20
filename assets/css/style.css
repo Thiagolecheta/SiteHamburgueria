@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald' , 'arial';
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-image: url("../imagens/fundo_header.png");    
+}
+
+.container {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3d2514;
+
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../imagens/banner.png');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    padding-bottom: 30px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+.banner_escritas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_escritas p {
+    font-size: 20px;
+    color: #3d2514;
+    font-weight: bold;
+    border: 2px dashed #3d2514;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 5px;
+}
+.banner_escritas h1 {
+    font-size: 110px;
+    color: #3d2514;
+    text-shadow: white 3px 3px 3px ;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+}
+.banner_escritas h2 {
+    font-size: 70px;
+    margin-top: -40px;
+    color: #3d2514;
+    text-shadow: white 3px 3px 3px ;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.banner_promo {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    width: auto;
+}
+
+.circulo_promo {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #bf2222;
+    border: dashed 2px white;
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#comidas {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: auto;
+    
+}
+.comidas_options {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.comidas_geral {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.option1 ,
+.option2 {
+    flex: 1;
+    margin: 20px;
+}
+.option1 {
+    margin-top: 40px;
+    background-image: url('../imagens/burguer1.jpg-1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px ;
+
+}
+
+.option2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.option3 ,
+.option4 {
+    flex: 1;
+    margin-top: 20px;
+    
+    border-radius: 15px ;
+}
+
+.option3 {
+    background-image: url('../imagens/burguer2.png');
+}
+
+.option4 {
+    background-image: url('../imagens/burguer3.png');
+}
