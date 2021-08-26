@@ -495,3 +495,159 @@ nav a {
      color: white;
      text-transform: uppercase;
  }
+
+ .menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    color: #ffc045;
+}
+
+.mm_line {
+    height: 4px;
+    background-color: #3d2514;
+}
+
+ @media (max-width:1200px) {
+     .container {
+         margin: 10px;
+     }
+     .body {
+         max-width: 1150px;
+     }
+
+     .banner_escritas,
+     .banner_promo {
+         margin: 20px;
+     }
+
+     .option2 {
+         margin: 30px;
+     }
+
+     .descricao_sabores {
+         max-width: 1150px;
+         text-align: center;
+     }
+
+     .divulgacao {
+         max-width: 1150px;
+         margin: 0px 5px 0px 0px;
+     }
+
+     .footer_menu {
+         max-width: 1150px;
+     }
+ }
+
+ @media (min-width: 960px) and (max-width:1199px){    
+    .container {
+        margin: 10px;
+        justify-content: center;
+        max-width: 960px;
+    }
+
+    .divulgacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao_sabores {
+        margin: 20px;
+    }
+ }
+
+ @media (min-width: 760px) and (max-width: 959px) {
+    
+    body{
+        max-width: 959px;
+        text-align: center;
+    }
+
+    .banner_escritas {
+        align-items: center;
+    }
+    .container {
+        max-width: 959px;
+        display: flex;
+    }
+
+    .titulo_sabores {
+        font-size: 30px;
+    }
+    .divulgacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao_sabores {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+
+    }
+ }
+
+ @media (max-width: 759px) {
+    
+    .banner_escritas {
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo_sabores {
+        font-size: 30px;
+    }
+    .divulgacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fomulario {
+        flex-direction: column;
+    }
+
+    .descricao_sabores {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffc045;
+        
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hamburgers {
+        flex-direction: column;
+    }
+
+ }
