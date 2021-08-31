@@ -83,10 +83,9 @@ nav a {
     color: #3d2514;
     font-weight: bold;
     border: 2px dashed #3d2514;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     text-align: center;
-    margin-left: 5px;
 }
 .banner_escritas h1 {
     font-size: 110px;
@@ -148,7 +147,9 @@ nav a {
 .option1 ,
 .option2 {
     flex: 1;
-    margin: 20px 0px 20px 20px;
+    margin-top: 10px;
+    margin-left:20px;
+    
 }
 .option1 {
     margin: 20px 0px 20px 20px;
@@ -162,21 +163,29 @@ nav a {
 .option2 {
     display: flex;
     flex-direction: column;
+    
 }
 
 .option3 ,
 .option4 {
     flex: 1;
-    margin-bottom: 10px;
-    border-radius: 15px ;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px ;
 }
 
 .option3 {
     background-image: url('../imagens/burguer2.png');
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .option4 {
     background-image: url('../imagens/burguer3.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .option_descricao {
@@ -594,14 +603,22 @@ nav a {
 
  @media (max-width: 759px) {
     
-    .banner_escritas {
-        align-items: center;
+    .banner_escritas h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+
+    }
+    .banner_escritas h2 {
+        font-size: 50px;
     }
     .container {
         display: flex;
         flex-direction: column;
     }
 
+    .comidas_geral {
+        flex-direction: column;
+    }
     .titulo_sabores {
         font-size: 30px;
     }
@@ -646,8 +663,50 @@ nav a {
         justify-content: space-around;
     }
 
+
+    #comidas {
+        height: 700px;
+    }
     .hamburgers {
+        flex-direction: column;
+        flex: 1;
+        height: auto;
+    }
+
+    .option1,
+    .option2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .option2 {
+        margin-top: -5px;
+        height: 500px;
+    }
+    .option3,
+    .option4 {
+        height: 500px;
+    }
+    
+    .option_descricao h1 {
+        font-size: 22px
+    }
+
+    .formulario {
+        justify-content: center;
+    }
+
+    .menu_geral {
         flex-direction: column;
     }
 
+    .fm_titulo h1{
+        font-size: 30px;
+    }
+
+    .icones{
+        flex-direction: row;
+        justify-content: flex-start;
+        
+    }
  }
